@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 导航 */
+#header{
+    background: url(../images/headerbg.png) no-repeat 0 0;
+    background-color: #ECECEC;
+    height: 105px;
+}
+#header>#header-inner{
+    width: 990px;
+    margin: 0 auto;
+}
+#header>#header-inner>.firstnav>.logo{
+    margin: 0 0 0 10px;
+    float: left;
+}
+#header>#header-inner>.firstnav>#inputSearch{
+    border: 1px solid #BABEBF;
+    color: #999999;
+    font-size: 14px;
+    height: 17px;
+    padding: 3px 6px 5px 6px;
+    width: 200px;
+    margin: 18px 0 0 30px;
+}
+#header>#header-inner>.firstnav>#skin{
+    float: right;
+    margin: 10px;
+    padding: 4px;
+    width: 120px;
+}
+#header>#header-inner>.firstnav>#skin>li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background: url(../images/theme.gif);
+    text-indent: -9999px;
+    margin: 0 2px;
+}
+#header>#header-inner>.firstnav>#skin>li#skin0{background-position: 0px 0px;}
+#header>#header-inner>.firstnav>#skin>li#skin1{background-position: 15px 0px;}
+#header>#header-inner>.firstnav>#skin>li#skin2{background-position: 35px 0px;}
+#header>#header-inner>.firstnav>#skin>li#skin3{background-position: 55px 0px;}
+#header>#header-inner>.firstnav>#skin>li#skin4{background-position: 75px 0px;}
+#header>#header-inner>.firstnav>#skin>li#skin5{background-position: 95px 0px;}
+#header>#header-inner>.firstnav>#skin>li#skin0.selected{background-position: 0px 15px;}
+#header>#header-inner>.firstnav>#skin>li#skin1.selected{background-position: 15px 15px;}
+#header>#header-inner>.firstnav>#skin>li#skin2.selected{background-position: 35px 15px;}
+#header>#header-inner>.firstnav>#skin>li#skin3.selected{background-position: 55px 15px;}
+#header>#header-inner>.firstnav>#skin>li#skin4.selected{background-position: 75px 15px;}
+#header>#header-inner>.firstnav>#skin>li#skin5.selected{background-position: 95px 15px;}
+
+#header>#header-inner>#nav{
+    background-color: #4A4A4A;
+}
+#header>#header-inner>#nav>ul{
+    margin-left: 25px;
+}
+#header>#header-inner>#nav>ul>li{
+    float: left;
+    padding: 8px 0; 
+    margin-right: 14px;
+}
+#header>#header-inner>#nav>ul>li>a{
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 8px;
+}
+#header>#header-inner>#nav>ul>li>.jnnav{
+   display: none;
+}
+/* 侧边栏 */
+#content{
+    width: 990px;
+    margin: 0 auto;
+}
+#content>#catalog{
+    padding: 10px 0;
+    float: left;
+    margin: 0 11px 0 0;
+}
+#content>#catalog>h2{
+    background: #6E6E6E;
+    height: 30px;
+    line-height: 30px;
+    width: 187px;
+    color: #fff;
+    font-size: 12px;
+    text-indent: 13px;
+}
+#content>#catalog>#catainfo{
+    overflow: hidden;
+    padding: 5px 10px 8px 10px;
+    width: 165px;
+    border: 1px solid #6E6E6E;
+}
+#content>#catalog>#catainfo>h3{
+    border-bottom: 1px solid #EEEEEE;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    width: 164px;
+}
+#content>#catalog>#catainfo>ul{
+    padding: 0 2px 8px 2px; 
+}
+#content>#catalog>#catainfo>ul>li{
+    float: left;
+    color: #AEADAE;
+    width: 79px;
+    padding: 0;
+}
+#content>#catalog>#catainfo>ul>li>a{
+    font-size: 12px;
+    color: #444444;
+    position: relative;
+}
+#content>#catalog>#catainfo>ul>li>a:hover{
+    color: #008cd7;
+}
+#content>#catalog>#catainfo>ul>li>a.promoted{
+    color: #f9044e;
+}
+#content>#catalog>#catainfo>ul>li>a>.hot{
+    background: url(../images/hot.gif) no-repeat center center;
+    height: 16px;
+    width: 21px;
+    position: absolute;
+    top: 0;
+}
+/* 大屏广告 */
+#content>#imageroll{
+    height: 320px;
+    width: 550px;
+    overflow: hidden;
+    float: left;
+    margin: 10px 11px 0 0;
+    position: relative;
+}
+#content>#imageroll>a>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#content>#imageroll>#adsnav{
+    position: absolute;
+    bottom: 0;
+    float: left;
+}
+#content>#imageroll>#adsnav>a{
+    background: #444444;
+    opacity: 0.7;
+    color: #fff;
+    float: left;
+    padding: 5px 15px;
+    width: 79px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 1px;
+}
+/* 最新动态 */
+#content>#notice{
+    width: 230px;
+    overflow:hidden;
+    padding: 10px 0;
+}
+#content>#notice>#noticeinfo{
+    border: 1px solid #dfdfdf;
+    margin: 5px 0; 
+    height: 133px;
+    overflow: hidden;
+}
+#content>#notice>#noticeinfo>h2{
+    height: 23px;
+    line-height: 23px;
+    border-bottom: 1px solid #DFDFDF;
+    text-indent: 12px;
+    font-size: 12px;
+}
+#content>#notice>#noticeinfo>ul{
+    margin-left: 12px;
+}
+#content>#notice>#noticeinfo>ul>li{
+   height: 21px;
+}
+#content>#notice>#noticeinfo>ul>li>a{
+    font-size: 12PX;
+    color: #666666;
+}
+#content>#notice>#noticeinfo>ul>li>a:hover{
+    color: #008cd7;
+}
+/* 品牌活动 */
+#content>#brand{
+    width: 790px;
+    overflow: hidden;
+}
+#content>#brand>#brandtab{
+    border-bottom: 1px solid #e4e4e4;
+    height: 29px;
+    position: relative;
+}
+#content>#brand>#brandtab>h2{
+    font-size:  12px;
+    height: 29px;
+    line-height: 29px;
+    position: absolute;
+    left: 0;
+    width: 100px;
+}
+#content>#brand>#brandtab>ul{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#content>#brand>#brandtab>ul>li{
+    float: left;
+    margin: 0 10px 0 0;
+}
+#content>#brand>#brandtab>ul>li>a{
+    font-size: 12px;
+    color: #000;
+    background: #e4e4e4;
+    padding: 2px 10px;
+}
+#content>#brand>#brandcontent{
+    width: 790px;
+    height: 188px;
+    overflow: hidden;
+    margin: 8px 5px;
+}
+#content>#brand>#brandcontent>ul{
+
+}
+#content>#brand>#brandcontent>ul>li{
+    float: left;
+    height: 188px;
+    padding: 0 5px;
+    width: 185px;
+    position: relative;
+}
+#content>#brand>#brandcontent>ul>li>a>img{
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+#content>#brand>#brandcontent>ul>li>span{
+    background: #efefef;
+    width: 183px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+
+}
+#content>#brand>#brandcontent>ul>li>span>a{
+    color: #666666;
+  
+}
+#content>#brand>#brandcontent>ul>li>span>a:hover{
+    color: #008cd7;
+}
