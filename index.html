@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>main_website</title>
     <link rel="stylesheet" href="./styles/1.css">
+    <link rel="stylesheet" href="./styles/skin/skin0.css" id="cssfile"> 
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 </head>
 <body>
     <!-- 导航 -->
@@ -13,7 +16,7 @@
         <div id="header-inner" >
             <div class="firstnav clearfix">
                     <a href="#" class="logo"><img src="./images/logo.gif" alt="logo"></a>
-                    <input id="inputSearch" type="text" placeholder="请输入商品名称">
+                    <input id="inputSearch" type="text" value="请输入商品名称">
                     <ul id="skin" class="clearfix">
                         <li id="skin0" title="蓝色">+</li>
                         <li id="skin1" title="紫色">+</li>
@@ -27,12 +30,13 @@
                     <ul class="clearfix">
                             <li><a href="#">首页</a></li>
                             <li><a href="#">品牌</a>
-                                <div class="jnnav">
-                                        <dl class="fore">
+                                <div class="jnnav clearfix">
+                                    <div class="submit clearfix">
+                                        <dl class="fore clearfix">
                                                 <dt>
                                                     <a href="#nogo">品牌：</a>
                                                 </dt>
-                                                <dd>
+                                                <dd >
                                                     <em ><a href="#nogo">耐克</a></em>
                                                     <em ><a href="#nogo">阿迪达斯</a></em>
                                                     <em ><a href="#nogo">达芙妮</a></em>
@@ -48,11 +52,11 @@
                                                     <em class="noborder"><a href="#nogo">特步</a></em>
                                                 </dd>
                                             </dl>
-                                            <dl class="fore">
+                                            <dl class="fore clearfix">
                                                     <dt>
                                                         <a href="#nogo">品牌：</a>
                                                     </dt>
-                                                    <dd>
+                                                    <dd >
                                                         <em ><a href="#nogo">耐克</a></em>
                                                         <em ><a href="#nogo">阿迪达斯</a></em>
                                                         <em ><a href="#nogo">达芙妮</a></em>
@@ -68,15 +72,17 @@
                                                         <em class="noborder"><a href="#nogo">特步</a></em>
                                                     </dd>
                                                 </dl>
+                                    </div>
                                 </div>
                             </li>
                             <li><a href="#">女装</a>
                                 <div class="jnnav">
-                                        <dl class="fore">
+                                    <div class="submit clearfix">
+                                        <dl class="fore ">
                                                 <dt>
                                                     <a href="#nogo">品牌：</a>
                                                 </dt>
-                                                <dd>
+                                                <dd >
                                                     <em ><a href="#nogo">耐克</a></em>
                                                     <em ><a href="#nogo">阿迪达斯</a></em>
                                                     <em ><a href="#nogo">达芙妮</a></em>
@@ -92,11 +98,11 @@
                                                     <em class="noborder"><a href="#nogo">特步</a></em>
                                                 </dd>
                                             </dl>
-                                            <dl class="fore">
+                                            <dl class="fore ">
                                                     <dt>
                                                         <a href="#nogo">品牌：</a>
                                                     </dt>
-                                                    <dd>
+                                                    <dd >
                                                         <em ><a href="#nogo">耐克</a></em>
                                                         <em ><a href="#nogo">阿迪达斯</a></em>
                                                         <em ><a href="#nogo">达芙妮</a></em>
@@ -112,15 +118,17 @@
                                                         <em class="noborder"><a href="#nogo">特步</a></em>
                                                     </dd>
                                                 </dl>
+                                    </div>
                                 </div>
                             </li>
                             <li><a href="#">男装</a>
                                 <div class="jnnav">
+                                    <div class="submit clearfix">
                                         <dl class="fore">
                                                 <dt>
                                                     <a href="#nogo">品牌：</a>
                                                 </dt>
-                                                <dd>
+                                                <dd >
                                                     <em ><a href="#nogo">耐克</a></em>
                                                     <em ><a href="#nogo">阿迪达斯</a></em>
                                                     <em ><a href="#nogo">达芙妮</a></em>
@@ -136,11 +144,11 @@
                                                     <em class="noborder"><a href="#nogo">特步</a></em>
                                                 </dd>
                                             </dl>
-                                            <dl class="fore">
+                                            <dl class="fore ">
                                                     <dt>
                                                         <a href="#nogo">品牌：</a>
                                                     </dt>
-                                                    <dd>
+                                                    <dd >
                                                         <em ><a href="#nogo">耐克</a></em>
                                                         <em ><a href="#nogo">阿迪达斯</a></em>
                                                         <em ><a href="#nogo">达芙妮</a></em>
@@ -156,6 +164,7 @@
                                                         <em class="noborder"><a href="#nogo">特步</a></em>
                                                     </dd>
                                                 </dl>
+                                    </div>
                                 </div>
                             </li>
                             <li><a href="#">鞋包配饰</a></li>
@@ -332,7 +341,6 @@
             </div>
         </div>
     </div>
-    <div id="footer"></div>
-    
+    <script src="./scripts/1.js"></script>
 </body>
 </html>
