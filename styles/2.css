@@ -36,6 +36,9 @@ a{
     width: 200px;
     margin: 18px 0 0 30px;
 }
+#header>#header-inner>.firstnav>input.focus{
+    border: 1px solid #00a5ff;
+}
 #header>#header-inner>.firstnav>#skin{
     float: right;
     margin: 10px;
@@ -73,25 +76,90 @@ a{
     float: left;
     padding: 8px 0; 
     margin-right: 14px;
+    position: relative;
+
 }
 #header>#header-inner>#nav>ul>li>a{
     font-weight: 700;
     color: #fff;
     font-size: 14px;
-    padding: 0 8px;
+    padding: 0 8px;  
+}
+#header>#header-inner>#nav>ul>li>a:hover{
+    text-decoration: underline;
 }
 #header>#header-inner>#nav>ul>li>.jnnav{
+    font-size: 12px;
+    background:#FFFFFF;
+    border: 1px solid #B1B1B1;
+	border-top:0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+    width: 474px;
    display: none;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit{
+    height: auto !important;
+    min-height: 100px;
+    padding: 10px 12px;
+    width: 450px;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit>dl{
+    display: flex;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit>dl:nth-child(1){
+    padding-bottom: 8px;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit>dl:nth-child(2) {
+    border-top: 1px dashed #C4C4C4;
+    overflow: hidden;
+    padding: 8px 0;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit>dl>dt {
+    font-weight: bold;
+    line-height: 16px;
+    padding: 4px 3px;
+    text-align: center;
+    width: 76px;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit>dl>dt>a {
+    color: #000;
+    font-weight: 700;
+	font-size:12px;
+	padding:0;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit>dl>dd {
+    float: left;
+    overflow: hidden;
+    padding: 0;
+    width: 364px;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit>dl>dd > em {
+    border-right: 1px solid #CCCCCC;
+    font-style: normal;
+    height: 14px;
+    line-height: 14px;
+    margin: 5px 0;
+    padding: 0 8px;
+}
+#header>#header-inner>#nav>ul>li>.jnnav>.submit>dl>dd > em >a {
+    color: #666666;
+    white-space: nowrap;
+	font-size:12px;
+	font-weight:normal;
+    padding:0;
 }
 /* 侧边栏 */
 #content{
     width: 990px;
     margin: 0 auto;
-    margin-top: 10px;
-    display: flex;
+    padding: 10px 0;
 }
 #content>#catalog{
-   
+    
     float: left;
     margin: 0 11px 0 0;
 }
@@ -146,16 +214,15 @@ a{
 }
 /* 产品简介 */
 #content>#proitem{
-    
+    float: left;
     width: 312px;
     height: 560px;
-   
     margin-right: 10px;
 }
 #content>#proitem>.zoomwrap{
     border: 1px solid #bbbbbb;
     cursor: pointer;
-    
+    height: 310px;
 }
 #content>#proitem>.look{
     width: 320px;
@@ -212,6 +279,7 @@ a{
 #content>#details{
     font-size: 12px;
     line-height: 25px;
+    display: flex;
 }
 #content>#details{
     font-size: 12px;
