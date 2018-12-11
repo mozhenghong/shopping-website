@@ -374,3 +374,13 @@ a{
     text-decoration: line-through;
     color: #404040;
 }
+.footer{
+    text-align: left;
+}
+.footer>a{
+    border: 1px solid #37C7D4;
+    border-radius: 5px;
+    background: #98E0E6;
+    color: #fff;
+    padding: 2px 6px;
+}
