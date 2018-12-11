@@ -264,8 +264,13 @@ a{
     border-bottom: none;
     font-size: 12px;
 }
+#content>#proitem>.tab>.tab_menu>ul>li.selected{
+    background: #6d84b4;
+    color: #fff;
+}
 #content>#proitem>.tab>.tab_menu>ul>li:hover{
     background: #dfdfdf;
+    color: #000;
 }
 #content>#proitem>.tab>.tab_box{
     border: 1px solid #898989;
@@ -289,9 +294,22 @@ a{
    float: left;
 }
 #content>#details>.detailswrap>.pro_rating>ul>li{
-    float: left;
-    text-indent: -9999em;
+    text-indent: -999em;
  }
+ #content>#details>.detailswrap>.pro_rating>ul>li>a{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    text-decoration: none;
+    z-index: 200;
+}
+#content>#details>.detailswrap>.pro_rating>ul>li.one>a{left: 0;}
+#content>#details>.detailswrap>.pro_rating>ul>li.two>a{left: 16px;}
+#content>#details>.detailswrap>.pro_rating>ul>li.three>a{left: 32px;}
+#content>#details>.detailswrap>.pro_rating>ul>li.four>a{left: 48px;}
+#content>#details>.detailswrap>.pro_rating>ul>li.five>a{left: 64px;}
  #content>#details>.detailswrap>.pro_rating>ul.onestar {
     background-position: 0 -16px;
 }
@@ -312,6 +330,9 @@ a{
     width: 80px;
     height: 16px;
     margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+    clear: both;
     position: relative;
     background: url(../images/star-matrix.gif) no-repeat 0 0;
  }
@@ -327,6 +348,9 @@ a{
 #content>#details>.detailswrap>ul>li>ul>li>img:hover{
     border: 1px solid #f60;
 }
+#content>#details>.detailswrap>ul>li>ul>li>img.selected{
+    border: 1px solid #f60;
+}
 #content>#details>.detailswrap>ul>li>ul.size>li{
     display: block;
     margin-right: 6px;
@@ -336,4 +360,17 @@ a{
     height: 30px;
     overflow: hidden;
     text-align: center;
+}
+#content>#details>.detailswrap>ul>li>ul.size>li.selected{
+   background: #FF6600; 
+}
+#content>#details>.detailswrap>ul>li.tbDetailPrice>strong{
+    font-weight: 700;
+    color: #FF5500;
+    font: 24px Tahoma,Arial,Helvetica,sans-serif;
+   vertical-align: middle;
+}
+#content>#details>.detailswrap>ul>li.price>strong{
+    text-decoration: line-through;
+    color: #404040;
 }
