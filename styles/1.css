@@ -241,11 +241,30 @@ a{
     font-size: 12px;
     margin-right: 1px;
 }
+#content>#imageroll>#adsnav>a.chos {
+    background: url("../images/adindex.gif") no-repeat center 43px #37A7D7;
+    color: #FFFFFF;
+}
 /* 最新动态 */
+#tooltip{
+    position: absolute;
+    font-size: 14px;
+    border: 1px solid #333;
+    background: #f7f5d1;
+    padding: 1px;
+    color: #333;
+    display: none;
+}
 #content>#notice{
     width: 230px;
     overflow:hidden;
     padding: 10px 0;
+}
+#content>#notice>a>img{
+    transition: all 1.5s;
+}
+#content>#notice>a:hover>img{
+    transform: rotate(720deg);
 }
 #content>#notice>#noticeinfo{
     border: 1px solid #dfdfdf;
@@ -299,6 +318,7 @@ a{
 #content>#brand>#brandtab>ul>li{
     float: left;
     margin: 0 10px 0 0;
+    padding-bottom: 3px;
 }
 #content>#brand>#brandtab>ul>li>a{
     font-size: 12px;
@@ -306,28 +326,41 @@ a{
     background: #e4e4e4;
     padding: 2px 10px;
 }
-#content>#brand>#brandcontent{
-    width: 790px;
+#content>#brand>#brandtab>ul>li.chos {
+    background: url("../images/chos.gif") no-repeat scroll 50% bottom transparent;
+    padding-bottom: 3px;
+}
+#content>#brand>#brandtab>ul>li.chos >a {
+    background-color: #FA5889;
+    color: #FFFFFF;
+}
+#content>#brand>div>#brandcontent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3200px;
+}
+#content>#brand>div{
+   float: left;
     height: 188px;
     overflow: hidden;
     margin: 8px 5px;
+    width: 790px;
+	position: relative;
 }
-#content>#brand>#brandcontent>ul{
-
-}
-#content>#brand>#brandcontent>ul>li{
+#content>#brand>div>#brandcontent>ul>li{
     float: left;
     height: 188px;
     padding: 0 5px;
     width: 185px;
     position: relative;
 }
-#content>#brand>#brandcontent>ul>li>a>img{
+#content>#brand>div>#brandcontent>ul>li>a>img{
     position: absolute;
     left: 5px;
     top: 0;
 }
-#content>#brand>#brandcontent>ul>li>span{
+#content>#brand>div>#brandcontent>ul>li>span{
     background: #efefef;
     width: 183px;
     height: 24px;
@@ -338,10 +371,31 @@ a{
     text-align: center;
 
 }
-#content>#brand>#brandcontent>ul>li>span>a{
+#content>#brand>div>#brandcontent>ul>li>span>a{
     color: #666666;
   
 }
-#content>#brand>#brandcontent>ul>li>span>a:hover{
+#content>#brand>div>#brandcontent>ul>li>span>a:hover{
     color: #008cd7;
+}
+#content>#brand>div>#brandcontent>ul>li>.imgMask{
+	background-color:#ffffff; 
+	filter:alpha(opacity=0);
+	opacity: 0;	
+	cursor: pointer;
+}
+#content>#brand>div>#brandcontent>ul>li>.imageOver{
+    background: url(../images/zoom.gif) no-repeat 50% 50%;
+    opacity: 0.6;
+    filter: alpha(opacity=60)
+}
+.footer{
+    text-align: right;
+}
+.footer>a{
+    border: 1px solid #37C7D4;
+    border-radius: 5px;
+    background: #98E0E6;
+    color: #fff;
+    padding: 2px 6px;
 }
